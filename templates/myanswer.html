@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Questions and Actions</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <div class="questions">
+            <h2>Question 1:</h2>
+            <p>Cloud platforms offer elastic distributed storage and powerful computing resources, similar to a "super warehouse" that can hire "employees" as needed to handle tasks of varying complexity. For example, Netflix uses cloud platforms to store user viewing data and analyzes behavior through cloud computing to recommend personalized content.</p>
+
+            <h2>Question 2:</h2>
+            <p>Web applications encapsulate complex AI models, making them visual and easy to operate. For instance, like a coffee machine, users only need to press a button to get a finished cup of coffee without understanding its internal mechanism. ChatGPT is a great example of this in practice.</p>
+
+            <h2>Question 3:</h2>
+            <p>Cloud services handle surging data traffic flexibly through auto-scaling and distributed architecture. This is similar to how a restaurant increases its cooking equipment and chefs when more guests arrive. For instance, Uber uses cloud services to process ride requests and map data in real-time across the globe.</p>
+
+            <h2>Question 4:</h2>
+            <p>Web applications integrate AI models into business systems via APIs, enabling users to call the models and automate operations. This works like a translator, bridging human and AI languages.</p>
+
+            <h2>Question 5:</h2>
+            <p>Cloud AI services provide an end-to-end toolchain, including data preparation, model training, automated deployment, and real-time monitoring, helping users quickly manage the entire model lifecycle. For example, Spotify uses Google Cloud's AI services to efficiently train music recommendation models and monitor their performance in real-time, ensuring that recommendations meet user preferences.</p>
+        </div>
+
+        <div class="actions">
+            <h2>Main</h2>
+            <form action="/" method="post">
+                <p><input type="submit" value="genAI"></p>
+            </form>
+            <form action="/" method="post">
+                <p><input type="submit" value="End"></p>
+            </form>
+        </div>    
+    </div>
+</body>
+</html>

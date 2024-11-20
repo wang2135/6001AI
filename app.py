@@ -3,14 +3,19 @@ from flask import render_template, request
 
 app = Flask("__name__")
 
-@app.route("/", methods = ["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def index():
-    return(render_template("index.html"))
+    return render_template("index.html")
 
-@app.route("/main", methods = ["GET", "POST"])
+@app.route("/main", methods=["GET", "POST"])
 def main():
     name = request.form.get("q")
-    return(render_template("main.html"))
+    return render_template("main.html", name=name)
+
+@app.route("/qa", methods=["GET"])
+def qa():
+    return render_template("Q&A.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
+
